@@ -1,6 +1,6 @@
-all: maquiaBot
+all: maquiaBot4000
 
-maquiaBot:
+maquiaBot4000:
 	go build -v
 
 test:
@@ -10,7 +10,7 @@ checkFmt:
 	[ -z "$$(git ls-files | grep '\.go$$' | xargs gofmt -l)" ] || (exit 1)
 
 clean:
-	rm -f maquiaBot
+	rm -f maquiaBot4000
 
 .PHONY: all clean test checkFmt
 
